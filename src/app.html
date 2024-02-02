@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+	<div class="bg-white p-4 rounded-lg shadow max-w-sm mx-auto">
+		<h2 class="text-lg font-semibold mb-4">Skadat stycke 3 av 5</h2>
+		<div class="space-y-4">
+			<div class="flex flex-col">
+				<label for="incident" class="font-medium">
+					Beskriv händelsen
+				</label>
+				<input
+					id="incident"
+					placeholder="Till beskrivning"
+					class="mt-1 p-2 border rounded"
+					type="text"
+				/>
+			</div>
+			<div class="flex flex-col">
+				<label for="location" class="font-medium">
+					Skadat föremål
+				</label>
+				<input
+					id="location"
+					placeholder="Lägg till"
+					class="mt-1 p-2 border rounded"
+					type="text"
+				/>
+			</div>
+			<div class="flex flex-col">
+				<span class="font-medium">Är skadan synlig?</span>
+				<div class="flex mt-1">
+					<button
+						class="flex-1 p-2 border rounded-l text-white bg-blue-600"
+					>
+						Ja
+					</button>
+					<button
+						class="flex-1 p-2 border-t border-b border-r rounded-r"
+					>
+						Nej
+					</button>
+				</div>
+			</div>
+			<div class="flex flex-col">
+				<span class="font-medium"
+					>Finns annan privat eller kollektiv hemförsäkring?</span
+				>
+				<div class="flex mt-1">
+					<button class="flex-1 p-2 border rounded-l">Ja</button>
+					<button
+						class="flex-1 p-2 border-t border-b border-r rounded-r text-white bg-blue-600"
+					>
+						Nej
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="flex justify-center mt-6">
+			<div class="w-2 h-2 rounded-full bg-gray-400 mx-1"></div>
+			<div class="w-2 h-2 rounded-full bg-gray-400 mx-1"></div>
+			<div class="w-2 h-2 rounded-full bg-gray-400 mx-1"></div>
+			<div class="w-2 h-2 rounded-full bg-blue-600 mx-1"></div>
+			<div class="w-2 h-2 rounded-full bg-gray-400 mx-1"></div>
+		</div>
+	</div>
+</html>
